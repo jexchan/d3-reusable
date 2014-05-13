@@ -1,0 +1,136 @@
+body {
+  font-family: "Open Sans", "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "微软雅黑", "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6em;
+  color: #333333;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+}
+
+#main {
+  left: 25%;
+  position: absolute;
+}
+#main #text {
+  padding-bottom: 10px;
+}
+
+h2 {
+	/*text-align: center;*/
+	color: #ff6e00; 
+}
+
+p {
+  /*text-align: center;*/
+  /*color: #ff6e00; */
+  color: #ee0b77; 
+  font-size: 18px;
+}
+
+/* HEAP VIS */
+
+svg line {
+  fill: none;
+  shape-rendering: crispEdges;
+}
+
+.vis {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  border: 1px solid;
+  width: 658px;
+  position: relative;
+  margin-bottom: 20px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.vis text.label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.vis text.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.vis .axis {
+  font-size: 12px;
+}
+
+.vis line {
+  stroke: #e9e4d8;
+  stroke-width: 1px;
+}
+
+.vis .axis path {
+  fill: none;
+}
+
+.vis .tooltip {
+  position: absolute;
+  background-color: #fff;
+  display: none;
+  padding: 6px 8px;
+}
+
+.vis.old .tooltip {
+  border: 3px solid #000;
+  box-shadow: 0px 1px 3px #888888;
+  width: 80px;
+  font-size: 11px;
+  opacity: 0.9;
+}
+
+.vis.old.multi .tooltip {
+  text-align: center;
+}
+
+.vis.new .tooltip {
+  border: 2px solid #555;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.vis .tooltip-key {
+  font-weight: bold;
+}
+
+.vis .tooltip .tooltip-title {
+  font-size: 12px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.vis.old.multi .tooltip .tooltip-title {
+  font-size: 11px;
+  padding-bottom: 0px;
+}
+
+.vis .tooltip .tooltip-section {
+  overflow: auto;
+  width: 100%;
+  margin-bottom: 2px;
+  font-size: 11px;
+}
+
+.vis .tooltip .tooltip-section .tooltip-swatch {
+  float: left;
+  margin-right: 4px;
+  width: 16px;
+  height: 16px;
+}
+
+.vis .tooltip .tooltip-section .tooltip-label {
+  float: left;
+  width: 90px;
+  line-height: 16px;
+}
+
+.vis .tooltip .tooltip-section .tooltip-value {
+  float: left;
+  text-align: right;
+  font-weight: bold;
+  width: 42px;
+  height: 18px;
+}
